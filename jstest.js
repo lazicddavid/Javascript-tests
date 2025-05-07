@@ -42,3 +42,39 @@ console.log(konacanRezultat);*/
 const konacanRezultat = divide(14, 0);
 console.log(konacanRezultat);
 console.log("----------");
+
+function isEmptyString(text) {
+  if (text === "") {
+    console.log("Inut je prazan string!");
+  } else {
+    console.log("Sve je ok!");
+  }
+}
+
+isEmptyString("zdravo!");
+isEmptyString("");
+console.log("----------");
+
+function checkEndsWithDot(text) {
+  if ((ends = ".")) {
+    console.log("Recenica se pravilno zavrsava tackom.");
+  } else {
+    console.log("Recenica se ne zavrsava tackom");
+  }
+}
+
+checkEndsWithDot("Danas je divan dan");
+
+console.log("----------");
+
+function greetByTime(time) {
+  if (time >= 5 && time <= 11) {
+    console.log("Dobro jutro");
+  } else if (time >= 12 && time <= 17) {
+    console.log("Dobar dan");
+  } else if (time >= 18 && time <= 22) {
+    console.log("Dobro veče");
+  } else {
+    console.log("Laku noć");
+  }
+}
