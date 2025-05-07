@@ -21,5 +21,9 @@ console.log(substract(10, 2));
 
 console.log("-------");
 
+function multiply(firstNumber, secondNumber) {
+  return firstNumber * secondNumber;
+}
+const rezultat = multiply(20, 4);
 
-function multiply(firstNumber, secondNumber);
+console.log(rezultat);
