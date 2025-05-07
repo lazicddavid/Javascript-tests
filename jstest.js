@@ -5,13 +5,8 @@ function squareNumber() {
 }
 squareNumber();
 
-let novcanice = [10, 5, 6, 90, 40, 60, 20];
-
-let broj_novcanica = novcanice.length;
-let brojac = 5;
-
-while (brojac < broj_novcanica) {
-  console.log(novcanice[brojac]);
-
-  brojac++;
+function add(firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
 }
+const rezultat = add(10, 5);
+console.log(rezultat);
