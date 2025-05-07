@@ -78,3 +78,7 @@ function greetByTime(time) {
     console.log("Laku noć");
   }
 }
+greetByTime(6);
+greetByTime(13);
+greetByTime(20);
+greetByTime(3);
