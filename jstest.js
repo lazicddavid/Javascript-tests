@@ -10,3 +10,16 @@ function add(firstNumber, secondNumber) {
 }
 const rezultat = add(10, 5);
 console.log(rezultat);
+
+console.log("-------");
+
+function substract(firstNumber, secondNumber) {
+  return firstNumber - secondNumber;
+}
+
+console.log(substract(10, 2));
+
+console.log("-------");
+
+
+function multiply(firstNumber, secondNumber);
