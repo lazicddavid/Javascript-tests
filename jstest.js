@@ -63,7 +63,7 @@ function checkEndsWithDot(text) {
   }
 }
 
-checkEndsWithDot("Danas je divan dan");
+checkEndsWithDot("Danas je divan dan. ");
 
 console.log("----------");
 
@@ -72,13 +72,18 @@ function greetByTime(time) {
     console.log("Dobro jutro");
   } else if (time >= 12 && time <= 17) {
     console.log("Dobar dan");
-  } else if (time >= 18 && time <= 22) {
-    console.log("Dobro veče");
+  } else if (time >= 18 && time <= 21) {
+    console.log("Dobro vece");
   } else {
-    console.log("Laku noć");
+    console.log("Laku noc");
   }
 }
-greetByTime(6);
-greetByTime(13);
-greetByTime(20);
-greetByTime(3);
+
+greetByTime(7);
+greetByTime(12);
+greetByTime(10);
+greetByTime(22);
+console.log("----------");
+
+
+function logIn(username, password)
