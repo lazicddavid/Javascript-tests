@@ -85,5 +85,9 @@ greetByTime(10);
 greetByTime(22);
 console.log("----------");
 
-
-function logIn(username, password)
+function logIn(username, password) {
+  if (typeof username === "string" || typeof password === "string") {
+    console.log("Inputi moraju biti stringovi");
+    return;
+  }
+}
