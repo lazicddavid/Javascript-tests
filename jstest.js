@@ -9,7 +9,7 @@ function add(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
 const rezultat = add(10, 5);
-console.log(rezultat);
+console.log("rezultat je:", rezultat);
 
 console.log("----------");
 
@@ -36,9 +36,11 @@ function divide(firstNumber, secondNumber) {
   }
   return firstNumber / secondNumber;
 }
+//pogledaj lekciju type coercion
+const a = 2;
+const b = "2";
+console.log(a == b);
 
-/*const konacanRezultat = divide(50, 25);
-console.log(konacanRezultat);*/
 const konacanRezultat = divide(14, 0);
 console.log(konacanRezultat);
 console.log("----------");
@@ -54,7 +56,7 @@ function isEmptyString(text) {
 isEmptyString("zdravo!");
 isEmptyString("");
 console.log("----------");
-
+//how to check if string ends with
 function checkEndsWithDot(text) {
   if ((ends = ".")) {
     console.log("Recenica se pravilno zavrsava tackom.");
@@ -63,7 +65,7 @@ function checkEndsWithDot(text) {
   }
 }
 
-checkEndsWithDot("Danas je divan dan. ");
+checkEndsWithDot("Danas je suncan dan.");
 
 console.log("----------");
 
@@ -86,8 +88,27 @@ greetByTime(22);
 console.log("----------");
 
 function logIn(username, password) {
-  if (typeof username === "string" || typeof password === "string") {
+  if (typeof username !== "string" || typeof password !== "string") {
     console.log("Inputi moraju biti stringovi");
     return;
   }
+
+  if (username === "admin") {
+    return true;
+  } else if (username === "monkey" && password === "123") {
+    return true;
+  } else if (username === "moomoo" && password === "farm") {
+    return true;
+  } else {
+    return false;
+  }
 }
+const test = logIn("hello", "meow");
+const test2 = logIn("admin", "lol");
+const test3 = logIn("monkey", "123");
+const test4 = logIn("moomoo", "farm");
+const test5 = logIn("moomoo", "moo");
+
+console.log(test, test2, test3, test4, test5);
+
+console.log("----------");
