@@ -116,3 +116,4 @@ console.log("----------");
 console.log();
 padding: 20pageXOffset;
 margin: 0;
+box-sizing: border box;
