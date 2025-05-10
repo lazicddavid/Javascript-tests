@@ -112,3 +112,5 @@ const test5 = logIn("moomoo", "moo");
 console.log(test, test2, test3, test4, test5);
 
 console.log("----------");
+
+console.log();
