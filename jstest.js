@@ -112,11 +112,3 @@ const test5 = logIn("moomoo", "moo");
 console.log(test, test2, test3, test4, test5);
 
 console.log("----------");
-
-console.log();
-padding: 20pageXOffset;
-margin: 0;
-box-sizing: border box;
-display: flex;
-justify content
-border-radius
