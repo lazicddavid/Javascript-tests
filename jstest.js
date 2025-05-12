@@ -13,11 +13,11 @@ console.log("rezultat je:", rezultat);
 
 console.log("----------");
 
-function substract(firstNumber, secondNumber) {
+function subtract(firstNumber, secondNumber) {
   return firstNumber - secondNumber;
 }
 
-console.log(substract(10, 2));
+console.log(subtract(10, 2));
 
 console.log("----------");
 
@@ -36,10 +36,6 @@ function divide(firstNumber, secondNumber) {
   }
   return firstNumber / secondNumber;
 }
-//pogledaj lekciju type coercion
-const a = 2;
-const b = "2";
-console.log(a == b);
 
 const konacanRezultat = divide(14, 0);
 console.log(konacanRezultat);
@@ -47,7 +43,7 @@ console.log("----------");
 
 function isEmptyString(text) {
   if (text === "") {
-    console.log("Inut je prazan string!");
+    console.log("Input je prazan string!");
   } else {
     console.log("Sve je ok!");
   }
@@ -56,16 +52,16 @@ function isEmptyString(text) {
 isEmptyString("zdravo!");
 isEmptyString("");
 console.log("----------");
-//how to check if string ends with
+//how to check if string ends with / izmenjeno
 function checkEndsWithDot(text) {
-  if ((ends = ".")) {
+  if (text.endsWith(".")) {
     console.log("Recenica se pravilno zavrsava tackom.");
   } else {
     console.log("Recenica se ne zavrsava tackom");
   }
 }
-
-checkEndsWithDot("Danas je suncan dan.");
+checkEndsWithDot("Ovo je recenica.");
+checkEndsWithDot("Ovo nije recenica");
 
 console.log("----------");
 
@@ -111,4 +107,54 @@ const test5 = logIn("moomoo", "moo");
 
 console.log(test, test2, test3, test4, test5);
 
-console.log("----------");
+console.log("-------------");
+console.log("-------------");
+console.log("-------------");
+
+function add(a, b) {
+  return a + b;
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  if (b === 0) {
+    console.log("Ne može se deliti sa nulom");
+    return;
+  }
+  return a / b;
+}
+
+function operate(a, b, operation) {
+  return operation(a, b);
+}
+
+console.log(operate(10, 5, add));
+console.log(operate(10, 5, subtract));
+console.log(operate(10, 5, multiply));
+console.log(operate(10, 5, divide));
+console.log(operate(10, 0, divide));
+
+console.log("------------");
+
+function convertDistance(broj, jedinica) {
+  if (jedinica === "km") {
+    let km = broj * 1.609;
+    console.log(broj + " milja je " + km + " kilometara");
+  } else if (jedinica === "m") {
+    let milje = broj / 1.609;
+    console.log(broj + " kilometara je " + milje + " milja");
+  } else {
+    console.log("Nepoznata distanca");
+  }
+}
+
+convertDistance(10, "km");
+convertDistance(5, "m");
+convertDistance(3, "milja");
