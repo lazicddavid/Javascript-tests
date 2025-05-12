@@ -142,6 +142,7 @@ console.log(operate(10, 5, divide));
 console.log(operate(10, 0, divide));
 
 console.log("------------");
+console.log("------------");
 
 function convertDistance(broj, jedinica) {
   if (jedinica === "km") {
@@ -159,6 +160,7 @@ convertDistance(10, "km");
 convertDistance(5, "m");
 convertDistance(3, "milja");
 
+console.log("------------");
 console.log("------------");
 
 function convertToKilometers(broj) {
@@ -183,6 +185,6 @@ function convertDistance(broj, tip) {
   }
 }
 
-convertDistance(10, "km");
-convertDistance(5, "m");
-convertDistance(7, "x");
+convertDistance(20, "km");
+convertDistance(14, "m");
+convertDistance(7, "d");
