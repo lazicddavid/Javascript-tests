@@ -158,3 +158,31 @@ function convertDistance(broj, jedinica) {
 convertDistance(10, "km");
 convertDistance(5, "m");
 convertDistance(3, "milja");
+
+console.log("------------");
+
+function convertToKilometers(broj) {
+  console.log(broj + " milja je " + broj * 1.609 + " kilometara");
+}
+
+function convertToMiles(broj) {
+  console.log(broj + " kilometara je " + broj / 1.609 + " milja");
+}
+
+function prikaziGresku() {
+  console.log("Nepoznata distanca");
+}
+
+function convertDistance(broj, tip) {
+  if (tip === "km") {
+    convertToKilometers(broj);
+  } else if (tip === "m") {
+    convertToMiles(broj);
+  } else {
+    prikaziGresku();
+  }
+}
+
+convertDistance(10, "km");
+convertDistance(5, "m");
+convertDistance(7, "x");
