@@ -148,6 +148,7 @@ function convertDistance(broj, jedinica) {
   if (jedinica === "km") {
     let km = broj * 1.609;
     console.log(broj + " milja je " + km + " kilometara");
+    console.log(`${Broj} milja je${km} kilometara`);
   } else if (jedinica === "m") {
     let milje = broj / 1.609;
     console.log(broj + " kilometara je " + milje + " milja");
@@ -158,7 +159,6 @@ function convertDistance(broj, jedinica) {
 
 convertDistance(10, "km");
 convertDistance(5, "m");
-convertDistance(3, "milja");
 
 console.log("------------");
 console.log("------------");
@@ -171,7 +171,7 @@ function convertToMiles(broj) {
   console.log(broj + " kilometara je " + broj / 1.609 + " milja");
 }
 
-function prikaziGresku() {
+function throwErrorWrongDistance() {
   console.log("Nepoznata distanca");
 }
 
@@ -181,7 +181,7 @@ function convertDistance(broj, tip) {
   } else if (tip === "m") {
     convertToMiles(broj);
   } else {
-    prikaziGresku();
+    throwErrorWrongDistance();
   }
 }
 
