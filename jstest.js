@@ -188,3 +188,5 @@ function convertDistance(broj, tip) {
 convertDistance(20, "km");
 convertDistance(14, "m");
 convertDistance(7, "d");
+
+console.log("-----------------");
