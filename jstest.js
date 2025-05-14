@@ -190,3 +190,13 @@ convertDistance(14, "m");
 convertDistance(7, "d");
 
 console.log("-----------------");
+
+let ime = "Marko";
+let prezime = "Markovic";
+let godine = 32;
+let plata = 3000;
+let godinaZaposlenja = 2004;
+let poslednjaPovisica = 2020;
+let zemlja = "Crna Gora";
+let ulica = "Vukosava Bozovica 25";
+let brojTelefona = 069620720;
