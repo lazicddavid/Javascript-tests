@@ -200,3 +200,17 @@ let poslednjaPovisica = 2020;
 let zemlja = "Crna Gora";
 let ulica = "Vukosava Bozovica 25";
 let brojTelefona = 069620720;
+
+function getInfo() {
+  console.log(`
+Ime i prezime: ${ime} ${prezime}
+Godine: ${godine}
+Plata: ${plata} EUR
+Godina zaposlenja: ${godinaZaposlenja}
+Poslednja povišica: ${poslednjaPovisica}
+Adresa: ${ulica}, ${zemlja}
+Broj telefona: ${brojTelefona}
+`);
+}
+
+getInfo();
