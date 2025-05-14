@@ -214,3 +214,69 @@ Broj telefona: ${brojTelefona}
 }
 
 getInfo();
+
+console.log("-----------------");
+
+function calculateWorkYears() {
+  return new Date().getFullYear() - godinaZaposlenja;
+}
+let staz = calculateWorkYears();
+console.log(`Zaposleni radi u firmi ${staz} godina.`);
+
+function calculateYearsUntilRetreat() {
+  return 65 - godine;
+}
+
+let preostaloGodina = calculateYearsUntilRetreat();
+console.log(`Do penzije mu je ostalo još ${preostaloGodina} godina.`);
+
+console.log("-----------------");
+
+function getSalary() {
+  console.log(`plata je ${plata} evra`);
+  return plata;
+}
+
+getSalary();
+console.log("-----------------");
+
+function setSalary(novaPlata) {
+  plata = novaPlata;
+  console.log(`nova plata: ${plata}  evra`);
+}
+
+setSalary(3700);
+console.log("-----------------");
+
+function setLastYearsRaise(novaGodina) {
+  poslednjaPovisica = novaGodina;
+}
+
+function getLastYearRaise() {
+  console.log(`poslednja povišica je bila ${poslednjaPovisica} godine`);
+  return poslednjaPovisica;
+}
+
+setLastYearsRaise(2023);
+getLastYearRaise();
+console.log("-----------------");
+
+function calculateRaise() {
+  let povisica = plata * 0.15;
+  console.log(`Povisica iznosi ${povisica} evra`);
+  return povisica;
+}
+calculateRaise();
+console.log("-----------------");
+
+function isEligibleForRaise() {
+  let trenutnaGodina = new Date().getFullYear();
+  let razlika = trenutnaGodina - poslednjaPovisica;
+
+  if (razlika > 1) {
+    console.log("Ima pravo na povisicu.");
+  } else {
+    console.log("nema pravo na povisicu.");
+  }
+}
+isEligibleForRaise();
