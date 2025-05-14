@@ -270,9 +270,10 @@ calculateRaise();
 console.log("-----------------");
 
 function isEligibleForRaise() {
-  let trenutnaGodina = new Date().getFullYear();
+  let trenutnaGodina =
+    new Date().getFullYear(); /*moze li ovde currentYear = 2025; ?*/
   let razlika = trenutnaGodina - poslednjaPovisica;
-
+  /* ?? */
   if (razlika > 1) {
     console.log("Ima pravo na povisicu.");
   } else {
@@ -280,3 +281,11 @@ function isEligibleForRaise() {
   }
 }
 isEligibleForRaise();
+
+console.log("-----------------");
+
+function raiseSalary() {
+  if (isEligibleForRaise()) {
+    let povisica = plata * 0.15;
+  }
+}
