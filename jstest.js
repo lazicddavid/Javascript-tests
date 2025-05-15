@@ -291,4 +291,4 @@ function raiseSalary() {
   }
 }
 
-<h1>title</h1>;
+<footer></footer>;
