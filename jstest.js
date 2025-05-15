@@ -290,5 +290,4 @@ function raiseSalary() {
     let povisica = plata * 0.15;
   }
 }
-
-<footer></footer>;
+<button></button>;
