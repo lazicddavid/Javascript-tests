@@ -207,7 +207,7 @@ Ime i prezime: ${ime} ${prezime}
 Godine: ${godine}
 Plata: ${plata} EUR
 Godina zaposlenja: ${godinaZaposlenja}
-Poslednja povišica: ${poslednjaPovisica}
+Poslednja povisica: ${poslednjaPovisica}
 Adresa: ${ulica}, ${zemlja}
 Broj telefona: ${brojTelefona}
 `);
@@ -253,7 +253,7 @@ function setLastYearsRaise(novaGodina) {
 }
 
 function getLastYearRaise() {
-  console.log(`poslednja povišica je bila ${poslednjaPovisica} godine`);
+  console.log(`poslednja povisica je bila ${poslednjaPovisica} godine`);
   return poslednjaPovisica;
 }
 
@@ -270,14 +270,15 @@ calculateRaise();
 console.log("-----------------");
 
 function isEligibleForRaise() {
-  let trenutnaGodina =
-    new Date().getFullYear(); /*moze li ovde currentYear = 2025; ?*/
+  let trenutnaGodina = new Date().getFullYear();
   let razlika = trenutnaGodina - poslednjaPovisica;
-  /* ?? */
+
   if (razlika > 1) {
     console.log("Ima pravo na povisicu.");
+    return true;
   } else {
-    console.log("nema pravo na povisicu.");
+    console.log("nema prav na povisicu.");
+    return false;
   }
 }
 isEligibleForRaise();
@@ -289,3 +290,5 @@ function raiseSalary() {
     let povisica = plata * 0.15;
   }
 }
+
+<div>main change</div>;
