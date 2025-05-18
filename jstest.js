@@ -291,6 +291,4 @@ function raiseSalary() {
   }
 }
 
-<div>firstNumber</div>;
-<p>main</p>;
-<h5>secondNumber</h5>;
+console.log();
